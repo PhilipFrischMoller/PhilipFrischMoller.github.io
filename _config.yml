@@ -24,7 +24,7 @@ show_downloads:
 google_analytics:
 theme: jekyll-theme-cayman
 # Build settings
-
+markdown: kramdown
 
 plugins:
   - jekyll-feed
