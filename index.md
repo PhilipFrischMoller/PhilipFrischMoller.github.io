@@ -1,8 +1,7 @@
 ---
-title: 02806 Social data analysis and visualisation
 layout: defualt
 ---
- 
+                             
 ## testing 
 
 ### Publishing text
