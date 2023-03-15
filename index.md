@@ -1,4 +1,6 @@
-
+---
+katex: True
+---
 
 ## testing 
 
@@ -12,9 +14,10 @@ This is just to test if we can host text in a post on the website.
 
 ### Math
 
-{% katex %}
-c = \pm\sqrt{a^2 + b^2}
-{% endkatex %}
+inline: $$f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi i \xi x} \,d\xi$$
+display mode (centered):
+
+$$f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi i \xi x} \,d\xi$$
 
 ### Publishing images
 
