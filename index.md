@@ -2,6 +2,7 @@
 usemathjax: true
 use_math: true
 title: 02806 Social data analysis and visualisation
+layout: defualt
 ---
 .
 ## testing 
