@@ -1,5 +1,5 @@
 ---
-katex: True
+usemathjax: true
 title: 02806 Social data analysis and visualisation
 ---
 .
