@@ -19,7 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: 02806 Social data analysis and visualisation
-description: Website created for the course 02806 Social data analysis and visualisation at DTU by Philip Frisch Møller.
+description: Website created for the course 02806 Social data analysis and visualisation at DTU by Philip Frisch Møller s175387.
 show_downloads:
 google_analytics:
 theme: jekyll-theme-cayman
