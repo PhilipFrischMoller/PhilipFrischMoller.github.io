@@ -1,0 +1,13 @@
+layout: post
+title: "test post"
+date: 2023-03-15
+categories: test
+
+# Publishing text
+
+This is just to test if we can host text in a post on the website.
+
+# Publishing an Image
+
+![weekly crimes](/PhilipFrischMoller.github.io/imgs/hourly_crimes.png)
+
