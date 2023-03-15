@@ -10,7 +10,13 @@ This is just to test if we can host text in a post on the website.
 
 [test page](/pages/test_page.md)
 
-## Publishing images
+### Math
+
+{% katex %}
+c = \pm\sqrt{a^2 + b^2}
+{% endkatex %}
+
+### Publishing images
 
 ![weekly crimes](/imgs/hourly_crimes.png)
 
