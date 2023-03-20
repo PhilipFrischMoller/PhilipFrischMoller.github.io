@@ -1,23 +1,9 @@
 ---
-title: 02806 Social data analysis and visualisation
+title: San Francisco's Depreciating Drug and Narcotics Problem
 ---
 
 .
     
 ## testing 
 
-### Publishing text
-
-This is just to test if we can host text in a post on the website.
-
-### Linking to page
-
-[test page](/pages/test_page.md)
-
-### Publishing images
-
-![weekly crimes](/imgs/hourly_crimes.png)
-
-![cartheft on sundays](/imgs/cartheft_sundays.png)
-
-
+<embed type="text/html" src="imgs/interactiveplot.html" width="600" height="400"></embed>
