@@ -21,3 +21,7 @@ Geographically, it is evident that the Mission, Southern and Tenderloin police d
 Evidently the narcotics incident rates seem to be very geographically correlated and is centered at and around the city center in Tenderloin police district. If we normalise by district size, it is perhaps even more noticable that Tenderloin police district is overly represented in terms of narcotics crimes. However, this effect can be driven by two factors: Either those specifice police districts saw a real increase in drug use and therefore also a natural increase in police reportings, or the drug use has been relatively stable over the years, but the policing force presence has just increased in the those specific regions.   
 
 <embed type="text/html" src="imgs/interactiveplot.html" width="800" height="800"></embed>
+*Interactive plot visualising the total amount of drug and narcotics related police reports that have been filed in a given hour of the day for each available year*
+ 
+
+
