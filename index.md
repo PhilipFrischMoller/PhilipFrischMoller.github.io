@@ -2,7 +2,7 @@
 title: San Francisco's Depreciating Drug and Narcotics Problem
 ---
 
-.
+ 
     
 ## A "Deep" Dive Into the Drug and Narcotics Related Crimes in San Fransisco
 
