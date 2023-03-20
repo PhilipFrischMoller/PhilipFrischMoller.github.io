@@ -16,6 +16,6 @@ Geographically, it is evident that the Mission, Southern and Tenderloin police d
 
 <img src="{{site.url}}/imgs/map_animation_cropped.gif" style="display: block; margin: auto;" />
 
-Together, Tenderloin and Southeren police districts encompass the city center and financial district of SF which presumably were the districts most impacted by the financial crisis. 
+Evidently the narcotics incident rates seem to be very geographically correlated and is centered at and around the city center in Tenderloin police district. If we normalise by district size, it is perhaps even more noticable that Tenderloin police district is overly represented in terms of narcotics crimes.  
 
 <embed type="text/html" src="imgs/interactiveplot.html" width="800" height="800"></embed>
