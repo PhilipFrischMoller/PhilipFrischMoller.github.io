@@ -1,7 +1,7 @@
 ---
 title: San Francisco's Depreciating Drug and Narcotics Problem
 ---
-. 
+.
 ## A "Deep" Dive Into the Drug and Narcotics Related Crimes in San Fransisco
 
 San Fransisco saw a peak in total number of drug and naroctics related crimes reports after the financial crisis in and during 2007-2008. The financial crisis ruined a lot of peoples financial situations which presumably lead to an increase in certain criminal behaviour, narcotics crimes being one of them. A [paper](https://www.unodc.org/documents/data-and-analysis/statistics/crime/GIVAS_Final_Report.pdf) written by the United Nations Offices of Drugs and Crimes (UNODC) highlighted that economic factors play a significant role in the prevailance of criminality. They too underline that there was a large increase in criminality that coinsides with the financial crisis. The city has since them recovered and as of 2017, has decreased the incident rate by 50% from the peak during 2007-2008. The below illustrated plot shows how drug and narcotics crime incidents (i.e. the amount of reported narcotics related crimes) has evolved as a function of time. 
@@ -25,5 +25,4 @@ Evidently the narcotics incident rates seem to be very geographically correlated
 
 The above interactive plot that shows where, temporally within a day, most of the drug and narcotics related police fillings have been reported. Notably the increase during 2007-2008 saw big increase in police reports during and around midday and late afternoon. Infact, most of the variance in the year to year number of reports seem to stem from this particular period within a day. Once more, this could indicate a larger and more thorough police presence during that time or that the increase stems from the fact that more people were openly abusing drugs during the midday and late afternoon. The latter could be explained by the aftermath of the 2007-2008 financial crisis which increased unemployment rates and homelessness, both of which could explain an incrase in midday drug use. It could also be argued that the increased police presence that could presumably also explain the tendecies, would have expensive and likely not something that would have been seriously suggested following the aftermath of the financial crisis. 
  
-
-
+*The visualisations stem from the linked [iPython notebook](https://github.com/PhilipFrischMoller/PhilipFrischMoller.github.io/blob/main/code/visualisationcode.ipynb)*
