@@ -35,7 +35,7 @@ When a fatal collision occurs, the vast majority has only one fatality as shown 
 
 *Pie chart showing how many people die in a deadly traffic accident*
 
-We shall now loook at where the most severe collision occur.
+We shall now loook at where the most severe collision occur. As evident from the below plots, all boroughs are more or less equally represented in terms of collision severity, although Staten Island seems to host, on average, more severe collisions. When we differenitate between victim types, i.e. motorists, cyclists and pedestrians, we see that pedestrians are killed more in the inner city. Queens, Staten Island and the Bronx share high motorist fatalities. This all seems to indicate that the collions severity is somehow linked to the location of the collision. 
 
 <img src="{{site.url}}/imgs/boroughsprob.png" style="display: block; margin: auto;" />
 
