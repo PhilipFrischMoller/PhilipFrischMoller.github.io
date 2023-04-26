@@ -58,7 +58,7 @@ We can compute the distance to the nearest hospital for all collisions and compu
 
 <embed type="text/html" src="imgs/interactiveplot.html" width="100%" height="600"/> 
 
-*Historams showing distance to nearest hospital distributions*
+*Histograms showing distance to nearest hospital distributions*
 
 We compute the relative severity (how many out of the total collisison are collision that result in fatalities) for collisions that occur within and outside of the 5 km radius to nearest hospital we see that collision occuring within the 5 km radius have a fatality rate of 0.59% whilst collisions occuring outside the radius have a fatality rate of 0.65%. If we only consider motorist deaths, the difference becomes even larger. Collisions within the 5 km radius have a motorist fatality rate of 0.20% whilst outside the radius, the fatality rate increaes to 0.32%. We can compare to the average fatality rate of 0.60% and the average motorist fatality rate of 0.22%. Overall, we see that collisions occuring more than 5 km away form the nearest hospital have a higher fatality rate, especially when one considers motorist deaths. 
 
@@ -79,5 +79,23 @@ We can compute how many collisions occur closest to a given hospital as seen in 
 *Bar chart showing relative strain from collision occuring > 5 km away from nearest hospital*
 
 Notably we see that Queens Hospital center is the hospital that is closest to most collisions occuring more than 5 km away from the nearest hospital. In fact, around 50% of the fatal collisions the hospital recieves stem from collisions occuring more than 5 km away. Kings County Hospital and Coney Island Hospital also have large proportions of distant collision patients.  
+
+# New Hospitals: Optimal locations for New Hospitals
+
+Using Kmeans clustering, we can find optimal placements for future hospitals based solely on collision coverage. Optimally, one would get 3 more hosptials denoted as 'New Hospital 1', 'New Hospital 2' and 'New Hospital 3' in the below shown map.
+
+<embed type="text/html" src="imgs/map_new_hospitals.html" width="100%" height="600"/>
+
+*Plot showing how the 3 new hospitals cover collisions not covered by a 5km radius from the current hospitals*
+
+Plotting the distance to nearest hospital distributions, it is evident that the average distance has decrease substantially.
+
+<embed type="text/html" src="imgs/interactiveplot_newhow.html" width="100%" height="600"/> 
+
+*Histograms showing distance to nearest hospital distributions for the additional hospitals*
+
+<img src="{{site.url}}/imgs/hospitalstress_newhos.png" style="display: block; margin: auto;" />
+
+*Bar chart showing relative strain from collision occuring > 5 km away from nearest hospital with the additional three hospitals included*
 
 
