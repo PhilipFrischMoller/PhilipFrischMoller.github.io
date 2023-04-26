@@ -7,9 +7,9 @@ title: A Deep Dive Into Vehicular Collisions in NYC
 
 # Deadly Roads
 
-Globally, 1.35 million people are killed on roadways every year which means that almost almost 3,700 people are killed every single day. The Association for Safe International Road Travel (ASIRT) reports that traffic related injuries are the leading cause of death among people aged 5 to 29. In addition to the devastation and loss of life, traffic accidents also cuase considerable financial losses to the individuals and families involved. Due to the lost productivity, time taken off by family members etc, the average country looses 3 percent of their GDP due to traffic related accidents. 
+Globally, 1.35 million people are killed on roadways every year which means that almost 3,700 people are killed every single day. The Association for Safe International Road Travel (ASIRT) reports that traffic related injuries are the leading cause of death among people aged 5 to 29. In addition to the devastation and loss of life, traffic accidents also cause considerable financial losses to the individuals and families involved. Due to the lost productivity, time taken off by family members etc, the average country looses 3 percent of their GDP due to traffic related accidents. 
 
-This online magazine will dive deeper into traffic accindents that cause death and injury, in NYC from 2013 to 2022. We aim to investigate hopsital coverage and figure out whether the distance to the hospitals play a role in the deadliness of the accidents, and model optimal new locations for hosptials in NYC.
+This online magazine will dive deeper into traffic accidents that cause death and injury, in NYC from 2013 to 2022. We aim to investigate hospital coverage and figure out whether the distance to the hospitals play a role in the deadliness of the accidents, and model optimal new locations for hospitals in NYC.
 
 <embed type="text/html" src="imgs/map_person_death.html" width="100%" height="600"/>
 
@@ -23,28 +23,29 @@ We start by looking at vehicular collisions and how they evolve over time to see
 
 *Plot showing how collision and mortality rates evolve over time*
 
-Taking a look at the contributing factors for the collisions, it is evident that driver distractions cause the highest number of accidents. Unsafe speeds, i.e., speeding, is one of the top contributing factors for death in traffic.  
+Taking a look at the contributing factors for the collisions, it is evident that driver distractions cause the highest number of accidents. Unsafe speeds, i.e., speeding, is one of the top contributing factors for death in traffic. There is less traffic during most weekends and as such vehicles drive substantially faster on average. Furthermore, Fridays and weekends tend to also lend themselves more to the consumption of alcohol which is also in the top 10 contributing factors for traffic fatalities. This also neatly explains the peak in fatalities up and around midnight. 
+
+What is perhaps counter intuitive is that most of the collisions occur during the summertime. One would have otherwise assumed it would have been during the winter as the weather would be statistically worse for driving. 
 
 <img src="{{site.url}}/imgs/causes_death.png" style="display: block; margin: auto;" />
 
 *Top 10 contributing factors for collisions*
 
-When a fatal collision occurs, the vast majority has only one fatality as shown in the pie chart below. This means that the other people involved got away with nonfatal injuries or the accident simply only involved a single person.
+When a fatal collision occurs, the vast majority has only one fatality as shown in the pie chart below. This means that the other people involved got away with nonfatal injuries or the accident simply only involved a single person. 
 
 <img src="{{site.url}}/imgs/deathpie.png" style="display: block; margin: auto;" />
 
 *Pie chart showing how many people die in a deadly traffic accident*
 
-We shall now loook at where the most severe collision occur. As evident from the below plots, all boroughs are more or less equally represented in terms of collision severity, although Staten Island seems to host, on average, more severe collisions. When we differenitate between victim types, i.e. motorists, cyclists and pedestrians, we see that pedestrians are killed more in the inner city. Queens, Staten Island and the Bronx share high motorist fatalities. This all seems to indicate that the collions severity is somehow linked to the location of the collision. 
+We shall now look at where the most severe collision occurs. As evident from the below plots, all boroughs are equally represented in terms of collision severity, although Staten Island seems to host, on average, more severe collisions. When we differentiate between victim types, i.e., motorists, cyclists and pedestrians, we see that pedestrians are killed more in the inner city. Queens, Staten Island and the Bronx share high motorist fatalities. This all seems to indicate that the collisions severity is somehow linked to the location of the collision. 
 
 <img src="{{site.url}}/imgs/boroughsprob.png" style="display: block; margin: auto;" />
 
-*Plots showing the probality of injury and death across boroughs, for all collisions (including collision that cause no injury or death)*
+*Plots showing the probability of injury and death across boroughs, for all collisions (including collision that cause no injury or death)*
 
 <img src="{{site.url}}/imgs/boroughs.png" style="display: block; margin: auto;" />
 
-*Plots showing the probality of injury and death across boroughs, for different victim categorisations*
-
+*Plots showing the probability of injury and death across boroughs, for different victim categorisations*
 
 # NYC Hospitals: Distance to Nearest Hospital
 
@@ -60,15 +61,15 @@ We can compute the distance to the nearest hospital for all collisions and compu
 
 *Histograms showing distance to nearest hospital distributions*
 
-We compute the relative severity (how many out of the total collisison are collision that result in fatalities) for collisions that occur within and outside of the 5 km radius to nearest hospital we see that collision occuring within the 5 km radius have a fatality rate of 0.59% whilst collisions occuring outside the radius have a fatality rate of 0.65%. If we only consider motorist deaths, the difference becomes even larger. Collisions within the 5 km radius have a motorist fatality rate of 0.20% whilst outside the radius, the fatality rate increaes to 0.32%. We can compare to the average fatality rate of 0.60% and the average motorist fatality rate of 0.22%. Overall, we see that collisions occuring more than 5 km away form the nearest hospital have a higher fatality rate, especially when one considers motorist deaths. 
+We compute the relative severity (how many out of the total collisions are collisions that result in fatalities) for collisions that occur within and outside of the 5 km radius to nearest hospital we see that collision occurring within the 5 km radius have a fatality rate of 0.59% whilst collisions occurring outside the radius have a fatality rate of 0.65%. If we only consider motorist deaths, the difference becomes even larger. Collisions within the 5 km radius have a motorist fatality rate of 0.20% whilst outside the radius, the fatality rate increase to 0.32%. We can compare to the average fatality rate of 0.60% and the average motorist fatality rate of 0.22%. Overall, we see that collisions occurring more than 5 km away form the nearest hospital have a higher fatality rate, especially when one considers motorist deaths. 
 
-These tendencies can naturally be explained by the speed limit increasing as you go further from the city center, where most of the hosptials are located. There are also more highways outside of the city center. Also, these do not necessarily mean that the increased fatality rates are due to long ambulance drives. What it does say is that there are signifcant number of fatal collisions that are not covered by the 5 km radius of the nearest hospital.
+These tendencies can naturally be explained by the speed limit increasing as you go further from the city centre, where most of the hospitals are located. There are also more highways outside of the city centre. Also, these do not necessarily mean that the increased fatality rates are due to long ambulance drives. What it does say is that there are significant number of fatal collisions that are not covered by the 5 km radius of the nearest hospital.
 
 <embed type="text/html" src="imgs/persons_killed_hospitals.html" width="100%" height="600"/>
 
-*Heat map showing fatal collsisions outside of the 5 km radius to nearest hospital*
+*Heat map showing fatal collisions outside of the 5 km radius to nearest hospital*
 
-5 km might not seem far, but according to [TomTom](https://www.tomtom.com/traffic-index/new-york-traffic/), the time it takes to travel 10 km is on average 24 min for 2022. That is 12 mins for 5 km distance. This does not take into account that Ambulances travel faster on average than normal cars. However, it would still take time to call the emergency services and for the ambulance to get going. Likewise, the distance given here is the straight line distance, which is significantly shorter than if one actually drove on the roads.
+5 km might not seem far, but according to [TomTom](https://www.tomtom.com/traffic-index/new-york-traffic/), the time it takes to travel 10 km is on average 24 min for 2022. That is 12 mins for 5 km distance. This does not consider that Ambulances travel faster on average than normal cars. However, it would still take time to call the emergency services and for the ambulance to get going. Likewise, the distance given here is the straight-line distance, which is significantly shorter than if one actually drove on the roads.
 
 ## Hospital Stress: Added Strain due to Distant Collisions
 
@@ -76,21 +77,21 @@ We can compute how many collisions occur closest to a given hospital as seen in 
 
 <img src="{{site.url}}/imgs/hospitalstress.png" style="display: block; margin: auto;" />
 
-*Bar chart showing relative strain from collision occuring > 5 km away from nearest hospital*
+*Bar chart showing relative strain from collision occurring > 5 km away from nearest hospital*
 
-Notably we see that Queens Hospital center is the hospital that is closest to most collisions occuring more than 5 km away from the nearest hospital. In fact, around 50% of the fatal collisions the hospital recieves stem from collisions occuring more than 5 km away. Kings County Hospital and Coney Island Hospital also have large proportions of distant collision patients.  
+Notably we see that Queens Hospital centre is the hospital that is closest to most collisions occurring more than 5 km away from the nearest hospital. In fact, around 50% of the fatal collisions the hospital receives stem from collisions occurring more than 5 km away. Kings County Hospital and Coney Island Hospital also have large proportions of distant collision patients.  
 
 # Solution: New Hospitals?
 
 ## Optimal locations for New Hospitals
 
-Using Kmeans clustering, we can find optimal placements for future hospitals based solely on collision coverage. We can then compute the mean shortest distance to a hospital given the addition of new hospitals. The incremental inpact of additional hospitals shows that after 4 new hospitals, we can decrease the average shortest distance by 0.5 km. 
+Using Kmeans clustering, we can find optimal placements for future hospitals based solely on collision coverage. We can then compute the mean shortest distance to a hospital given the addition of new hospitals. The incremental impact of additional hospitals shows that after 4 new hospitals, we can decrease the average shortest distance by 0.5 km. This small decrease is likely limited by the spread-out nature of the collisions that are more than 5 km away from the nearest hospital.
 
 <img src="{{site.url}}/imgs/mean.png" style="display: block; margin: auto;" />
 
-*Average shortest distance to hospital given the addition of new hosptials. The teal line represents the current mean distance without any additional hospitals*
+*Average shortest distance to hospital given the addition of new hospitals. The teal line represents the current mean distance without any additional hospitals*
 
-Using Kmeans inertia gradients, optimality is reached when NYC builds 3 additional hosptials denoted as 'New Hospital 1', 'New Hospital 2' and 'New Hospital 3' in the below shown map. Optimality is based on the coverage of collisions occuring over 5 km away from the nearest hospital.
+Using Kmeans inertia gradients, optimality is reached when NYC builds 3 additional hospitals denoted as 'New Hospital 1', 'New Hospital 2' and 'New Hospital 3' in the below shown map. Optimality is based on the coverage of collisions occurring over 5 km away from the nearest hospital.
 
 <embed type="text/html" src="imgs/map_new_hospitals.html" width="100%" height="600"/>
 
@@ -98,16 +99,30 @@ Using Kmeans inertia gradients, optimality is reached when NYC builds 3 addition
 
 <img src="{{site.url}}/imgs/hospitalstress_newhos.png" style="display: block; margin: auto;" />
 
-*Bar chart showing relative strain from collision occuring > 5 km away from nearest hospital with the additional three hospitals included*
+*Bar chart showing relative strain from collision occurring > 5 km away from nearest hospital with the additional three hospitals included*
 
-'New Hospital 2' has evidently taken alot of what collisions that were previously assigned to Queens. 'New Hospital 2' also leads on number of collisions resulting in fatalities. 'New Hospital 1', 'New Hospital 3' seem like huge investments that cover the least amount of total collisions. However, the addition of these new hospitals has also distributed the collisions that occur furhter than 5 km away more uniformly across the hospitals.  
+'New Hospital 2' has evidently taken a lot of what collisions that were previously assigned to Queens. 'New Hospital 2' also leads on number of collisions resulting in fatalities. This is probably a good choice for a hospital. 'New Hospital 1', 'New Hospital 3' seem like huge investments that also cover the least number of total collisions out of any hospital. That being said the addition of these new hospitals has also distributed the collisions that occur further than 5 km away more uniformly across the hospitals.  
 
 ## Rellocation of Existing Hospitals
 
-What if we instead of building 3 new hospitals, we simply moved the existing hospitals to create a better covering of the collisions. This would naturally be an insanely expensive undertaking, but will serve as a good visualisation of optimal hospital locations based solely on vehicular collisions. 
+What if we instead of building 3 new hospitals, we simply moved the existing hospitals to create a better covering of the collisions. This would naturally be an insanely expensive undertaking but will serve as a good visualisation of optimal hospital locations based solely on vehicular collisions which in turn says a lot about the occurrence rate densities. 
 
+<embed type="text/html" src="imgs/persons_killed_hospitals.html" width="100%" height="600"/>
 
+*Heat map showing fatal collisions alongside a 5 km radius from each newly relocated hospital*
 
+We note that after the relocation of all 10 hospitals, we are left with a mean shortest distance to hospital of 2.95, which is shorter than the addition of 5 extra hospitals. Further more, we can see that the collisions are asigned alot more uniformly between the hospitals or cluster centers.
 
+<img src="{{site.url}}/imgs/hospitalstress_v2.png" style="display: block; margin: auto;" />
 
+*Bar chart showing relative strain from collision occurring > 5 km away from nearest hospital after the relocation of all current hospitals*
 
+<embed type="text/html" src="interactiveplot_newhos_v2.html" width="100%" height="600"/> 
+
+*Interactive bar chart showing the distance to hospital distribution split on different collision severities*
+
+We can finally, based on the above interactive bar chart, that the relocation yields almost identical distance to nearest hospital distributions across the different severity types which is indeed optimal and could mean that the we capture most of the variance in the data set. 
+
+# Concluding words
+
+This has been an interactive deep dive into NYC vehicular collisions and how one would, in the ideal world where cost is of negliable concern, place hospitals to better cover the vehicular collisions. We also investigated the inherent tendencies in the collisions and how this can also lead to a better understanding of some social mechanisms that exist in society. 
