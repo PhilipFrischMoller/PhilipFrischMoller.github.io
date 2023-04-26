@@ -35,6 +35,17 @@ When a fatal collision occurs, the vast majority has only one fatality as shown 
 
 *Pie chart showing how many people die in a deadly traffic accident*
 
+We shall now loook at where the most severe collision occur.
+
+<img src="{{site.url}}/imgs/boroughsprob.png" style="display: block; margin: auto;" />
+
+*Plots showing the probality of injury and death across boroughs, for all collisions (including collision that cause no injury or death)*
+
+<img src="{{site.url}}/imgs/boroughs.png" style="display: block; margin: auto;" />
+
+*Plots showing the probality of injury and death across boroughs, for different victim categorisations*
+
+
 # NYC Hospitals: Distance to Nearest Hospital
 
 It is natural to assume that the closer you are a to a hospital, the faster the ambulance will arrive, and thus the probability of surviving increases. Thus, the location where one is involved with a vehicular collision should, according the assumption, impact the survivability of the collision. This naturally assumes that 1. the person is injured enough by the collision that the time spent in an ambulance is critical, and 2. the road congestion and average speed matter less than the total distance to the collision. To analyze this futher, we can first plot the locations of each accute care hospital in NYC with a heat map of the collisions.
