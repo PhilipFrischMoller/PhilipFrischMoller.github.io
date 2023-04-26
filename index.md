@@ -117,7 +117,7 @@ We note that after the relocation of all 10 hospitals, we are left with a mean s
 
 *Bar chart showing relative strain from collision occurring > 5 km away from nearest hospital after the relocation of all current hospitals*
 
-<embed type="text/html" src="interactiveplot_newhos_v2.html" width="100%" height="600"/> 
+<embed type="text/html" src="imgs/interactiveplot_newhos_v2.html" width="100%" height="600"/> 
 
 *Interactive bar chart showing the distance to hospital distribution split on different collision severities*
 
