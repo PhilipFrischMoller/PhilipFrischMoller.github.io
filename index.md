@@ -88,9 +88,9 @@ Using Kmeans clustering, we can find optimal placements for future hospitals bas
 
 *Plot showing how the 3 new hospitals cover collisions not covered by a 5km radius from the current hospitals*
 
-Plotting the distance to nearest hospital distributions, it is evident that the average distance has decrease substantially.
+Plotting the distance to nearest hospital distributions, it is evident that the average distance has decreased substantially. Furhter
 
-<embed type="text/html" src="imgs/interactiveplot_newhow.html" width="100%" height="600"/> 
+<embed type="text/html" src="imgs/interactiveplot_newhos.html" width="100%" height="600"/> 
 
 *Histograms showing distance to nearest hospital distributions for the additional hospitals*
 
