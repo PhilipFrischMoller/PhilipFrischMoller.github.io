@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bokeh Plot</title>
+<style>
+      html, body {
+        box-sizing: border-box;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-3.0.3.min.js"></script>
+    <script type="text/javascript">
+        Bokeh.set_log_level("info");
+    </script>
+  </head>
+  <body>
+    <div id="6fec7711-81c9-45c1-bcb8-21bfc3b45c06" data-root-id="p4339" style="display: contents;"></div>
+  
+    <script type="application/json" id="p4648">
+      {"5975fcbf-7f2b-4fdd-b3ff-3fef621476d0":{"version":"3.0.3","title":"Bokeh Application","defs":[],"roots":[{"type":"object","name":"Figure","id":"p4339","attributes":{"x_range":{"type":"object","name":"DataRange1d","id":"p4341"},"y_range":{"type":"object","name":"DataRange1d","id":"p4340"},"x_scale":{"type":"object","name":"LinearScale","id":"p4353"},"y_scale":{"type":"object","name":"LinearScale","id":"p4355"},"title":{"type":"object","name":"Title","id":"p4342","attributes":{"text":"Distance to Nearest Hospital"}},"renderers":[{"type":"object","name":"GlyphRenderer","id":"p4392","attributes":{"data_source":{"type":"object","name":"ColumnDataSource","id":"p4336","attributes":{"selected":{"type":"object","name":"Selection","id":"p4337","attributes":{"indices":[],"line_indices":[]}},"selection_policy":{"type":"object","name":"UnionRenderers","id":"p4338"},"data":{"type":"map","entries":[["index",{"type":"ndarray","array":{"type":"bytes","data":"AAAAAAEAAAACAAAAAwAAAAQAAAAFAAAABgAAAAcAAAAIAAAACQAAAAoAAAALAAAADAAAAA0AAAAOAAAADwAAABAAAAARAAAAEgAAABMAAAAUAAAAFQAAABYAAAAXAAAAGAAAABkAAAAaAAAAGwAAABwAAAAdAAAAHgAAAB8AAAAgAAAAIQAAACIAAAAjAAAAJAAAACUAAAAmAAAAJwAAACgAAAApAAAAKgAAACsAAAAsAAAALQAAAC4AAAAvAAAAMAAAADEAAAA="},"shape":[50],"dtype":"int32","order":"little"}],["Distance to Nearest Hospital",{"type":"ndarray","array":{"type":"bytes","data":"S19j8mFRnD+0McBPZg3hPxPWpcognPA/cGG8ao6x+D9UD8EGfmMAQANVzNY0bgRAnzMvqOt4CEBOeTp4ooMMQPWrzqQsRxBAzE7UDIhMEkAbvoV141EUQPJgi90+VxZAQNA8RppcGEAXc0Ku9WEaQGXi8xZRZxxAPYX5fqxsHkBFetXzAzkgQLFL2KexOyFAWAMxXF8+IkDE1DMQDUEjQGuMjMS6QyRA1l2PeGhGJUB+FegsFkkmQOnm6uDDSydAkJ5DlXFOKED8b0ZJH1EpQKMnn/3MUypAD/mhsXpWK0C2sPplKFksQCGC/RnWWy1AyDlWzoNeLkA0C1mCMWEvQG7hWJvvMTBAI0padUazMED3pYZPnTQxQK0OiCn0tTFAgGq0A0s3MkA207XdobgyQAov4rf4OTNAv5fjkU+7M0CT8w9spjw0QGdPPEb9vTRAHLg9IFQ/NUDwE2r6qsA1QKZ8a9QBQjZAediXrljDNkAvQZmIr0Q3QAOdxWIGxjdAuAXHPF1HOECMYfMWtMg4QA=="},"shape":[50],"dtype":"float64","order":"little"}],["Fatal Collisions",{"type":"ndarray","array":{"type":"bytes","data":"6ay5IJ01lz8q9Nw4hZ6rP06un7DJ9bM/gT3ZKLAnuz8jGOhoBAO9P80F6ay5IL0/b+D37A38vj/mPr+43Oe3PyMY6GgEA60/PYi7qAdxpz9B9rUQyL6mPzQ+zHDGh5k/LWLXoEXsmj+yr4VA9rWQP5g/sgDzR4Y/IKrtAES1bT86GsFARyN4PyCq7QBEtV0/IKrtAES1TT+YP7IA80dWP1SKlIBKkXI/3PTPgJv+aT8gqu0ARLVdP5g/sgDzR1Y/mD+yAPNHdj9+z97A79l7P1SKlIBKkXI/VIqUgEqRcj/c9M+Am/5pP5g/sgDzR1Y/IKrtAES1XT8gqu0ARLVdP5g/sgDzR1Y/mD+yAPNHVj9UipSASpFiPyCq7QBEtU0/VIqUgEqRYj8gqu0ARLVNPyCq7QBEtV0/mD+yAPNHVj8AAAAAAAAAACCq7QBEtT0/IKrtAES1TT8gqu0ARLU9P5g/sgDzR1Y/IKrtAES1PT8gqu0ARLU9PyCq7QBEtT0/IKrtAES1TT8AAAAAAAAAAA=="},"shape":[50],"dtype":"float64","order":"little"}],["Nonfatal Collisions",{"type":"ndarray","array":{"type":"bytes","data":"TEkzqpTrmz85cORhsF2vP8BvaV9svLc/jJPzsW+svT+Pfy/X/fq+P1ceW455mr0/jbonzot8uz/nrsurBSa2P6NYfh/iiKs/5z4PmC2KpD+AVj9hZiSjP56CnV6A5Jw/fH3fb61pmz8RPJYw1y+QPwDw1SoutYM/dlpIpBoIcT9NzxSpA/dqPypdGdev9lA/jgb5fAkkUz8J1BBzKGlUPxFll09DM2c/SMYGVRIxaz9NzxSpA/dqP/JcJLeDZ2c/phMkO5uubz8C2nrGAQtxP+N+U8JiVXM/1yj7VWtHYj/bP88jIJJeP0DiywwYfVo/jRS/9syoXz/w1KsuWmNkPx6sdxRw2Vs/7fl+OlF1Yz+nsqlV+D9lP20jWfBAalI/xRuX01p6Tz/9G4zzhglJP0DiywwYfTo/xRS0Fvk3ST9iET1IXt4yPwnUEHMoaUQ/xRS0Fvk3OT8e/yuAT8M5P9w47Ga+Tzg//mddogSxID/9wfTKRd00P0DiywwYfTo/VqxsNJxoJT/Fbks/OmQtPw=="},"shape":[50],"dtype":"float64","order":"little"}]]}}},"view":{"type":"object","name":"CDSView","id":"p4393","attributes":{"filter":{"type":"object","name":"AllIndices","id":"p4394"}}},"glyph":{"type":"object","name":"VBar","id":"p4389","attributes":{"x":{"type":"field","field":"Distance to Nearest Hospital"},"top":{"type":"field","field":"Fatal Collisions"},"line_alpha":{"type":"value","value":0.8},"fill_color":{"type":"value","value":"teal"},"fill_alpha":{"type":"value","value":0.8},"hatch_alpha":{"type":"value","value":0.8}}},"nonselection_glyph":{"type":"object","name":"VBar","id":"p4390","attributes":{"x":{"type":"field","field":"Distance to Nearest Hospital"},"top":{"type":"field","field":"Fatal Collisions"},"line_alpha":{"type":"value","value":0.1},"fill_color":{"type":"value","value":"teal"},"fill_alpha":{"type":"value","value":0.1},"hatch_alpha":{"type":"value","value":0.1}}},"muted_glyph":{"type":"object","name":"VBar","id":"p4391","attributes":{"x":{"type":"field","field":"Distance to Nearest Hospital"},"top":{"type":"field","field":"Fatal Collisions"},"line_alpha":{"type":"value","value":0.2},"fill_color":{"type":"value","value":"teal"},"fill_alpha":{"type":"value","value":0.2},"hatch_alpha":{"type":"value","value":0.2}}}}},{"type":"object","name":"GlyphRenderer","id":"p4416","attributes":{"data_source":{"id":"p4336"},"view":{"type":"object","name":"CDSView","id":"p4417","attributes":{"filter":{"type":"object","name":"AllIndices","id":"p4418"}}},"glyph":{"type":"object","name":"VBar","id":"p4413","attributes":{"x":{"type":"field","field":"Distance to Nearest Hospital"},"top":{"type":"field","field":"Nonfatal Collisions"},"line_alpha":{"type":"value","value":0.8},"fill_color":{"type":"value","value":"olivedrab"},"fill_alpha":{"type":"value","value":0.8},"hatch_alpha":{"type":"value","value":0.8}}},"nonselection_glyph":{"type":"object","name":"VBar","id":"p4414","attributes":{"x":{"type":"field","field":"Distance to Nearest Hospital"},"top":{"type":"field","field":"Nonfatal Collisions"},"line_alpha":{"type":"value","value":0.1},"fill_color":{"type":"value","value":"olivedrab"},"fill_alpha":{"type":"value","value":0.1},"hatch_alpha":{"type":"value","value":0.1}}},"muted_glyph":{"type":"object","name":"VBar","id":"p4415","attributes":{"x":{"type":"field","field":"Distance to Nearest Hospital"},"top":{"type":"field","field":"Nonfatal Collisions"},"line_alpha":{"type":"value","value":0.2},"fill_color":{"type":"value","value":"olivedrab"},"fill_alpha":{"type":"value","value":0.2},"hatch_alpha":{"type":"value","value":0.2}}}}}],"toolbar":{"type":"object","name":"Toolbar","id":"p4347","attributes":{"tools":[{"type":"object","name":"PanTool","id":"p4371"},{"type":"object","name":"WheelZoomTool","id":"p4372"},{"type":"object","name":"BoxZoomTool","id":"p4373","attributes":{"overlay":{"type":"object","name":"BoxAnnotation","id":"p4374","attributes":{"syncable":false,"level":"overlay","visible":false,"left_units":"canvas","right_units":"canvas","bottom_units":"canvas","top_units":"canvas","line_color":"black","line_alpha":1.0,"line_width":2,"line_dash":[4,4],"fill_color":"lightgrey","fill_alpha":0.5}}}},{"type":"object","name":"SaveTool","id":"p4375"},{"type":"object","name":"ResetTool","id":"p4376"},{"type":"object","name":"HelpTool","id":"p4377"}]}},"left":[{"type":"object","name":"LinearAxis","id":"p4364","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p4365","attributes":{"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p4367"},"axis_label":"Pct of Total Number of Collisions","major_label_policy":{"type":"object","name":"AllLabels","id":"p4366"}}}],"below":[{"type":"object","name":"LinearAxis","id":"p4357","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p4358","attributes":{"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p4360"},"axis_label":"Distance","major_label_policy":{"type":"object","name":"AllLabels","id":"p4359"}}}],"center":[{"type":"object","name":"Grid","id":"p4363","attributes":{"axis":{"id":"p4357"}}},{"type":"object","name":"Grid","id":"p4370","attributes":{"dimension":1,"axis":{"id":"p4364"}}},{"type":"object","name":"Legend","id":"p4408","attributes":{"click_policy":"hide","items":[{"type":"object","name":"LegendItem","id":"p4409","attributes":{"label":{"type":"value","value":"Fatal Collisions"},"renderers":[{"id":"p4392"}]}},{"type":"object","name":"LegendItem","id":"p4435","attributes":{"label":{"type":"value","value":"Nonfatal Collisions"},"renderers":[{"id":"p4416"}]}}]}}]}}]}}
+    </script>
+    <script type="text/javascript">
+      (function() {
+        const fn = function() {
+          Bokeh.safely(function() {
+            (function(root) {
+              function embed_document(root) {
+              const docs_json = document.getElementById('p4648').textContent;
+              const render_items = [{"docid":"5975fcbf-7f2b-4fdd-b3ff-3fef621476d0","roots":{"p4339":"6fec7711-81c9-45c1-bcb8-21bfc3b45c06"},"root_ids":["p4339"]}];
+              root.Bokeh.embed.embed_items(docs_json, render_items);
+              }
+              if (root.Bokeh !== undefined) {
+                embed_document(root);
+              } else {
+                let attempts = 0;
+                const timer = setInterval(function(root) {
+                  if (root.Bokeh !== undefined) {
+                    clearInterval(timer);
+                    embed_document(root);
+                  } else {
+                    attempts++;
+                    if (attempts > 100) {
+                      clearInterval(timer);
+                      console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                    }
+                  }
+                }, 10, root)
+              }
+            })(window);
+          });
+        };
+        if (document.readyState != "loading") fn();
+        else document.addEventListener("DOMContentLoaded", fn);
+      })();
+    </script>
+  </body>
+</html>

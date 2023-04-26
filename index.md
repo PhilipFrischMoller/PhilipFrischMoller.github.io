@@ -52,3 +52,6 @@ It is natural to assume that the closer you are a to a hospital, the faster the 
 
 <embed type="text/html" src="imgs/map_hospital_collision.html" width="100%" height="600"/>
 
+We can compute the distance to the nearest hospital
+
+<embed type="text/html" src="imgs/interactiveplot.html" width="100%" height="600"/>
