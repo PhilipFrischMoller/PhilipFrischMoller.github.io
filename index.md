@@ -15,7 +15,7 @@ This online magazine will dive deeper into traffic accindents that cause death a
 
 *Heat map showing deaths in NYC caused by vehicular Collisions between 2013 and 2022*
 
-# A step back
+# A step back: Exploring the Data
 
 We start by looking at vehicular collisions and how they evolve over time to see if there are any tendencies. Evidently, most collisions occur in the weekdats during rush our both mornings and evenings after work. There has been a significant decrease in collision rates in the last few years, although, there has been no significant change in the mortality rate. Intrestingly, it seems that mortalities occur mostly in the weekends, where the collision rate is lowest. 
 
@@ -23,8 +23,14 @@ We start by looking at vehicular collisions and how they evolve over time to see
 
 *Plot showing how collision and mortality rates evolve over time*
 
-Taking a look at the contributing factors for the collisions, It is evident that
+Taking a look at the contributing factors for the collisions, It is evident that driver distractions cause the highest amout of accidents. Unsafe speeds, i.e. speeding, is one of the top contributing factors for death in traffic.  
 
 <img src="{{site.url}}/imgs/causes_death.png" style="display: block; margin: auto;" />
 
 *Top 10 contributing factors for collisions*
+
+When a fatal collision occurs, the vast majority has only one fatality as shown in the pie chart below. This means that the other people involved got away with non fatal injuries or the accident simply only involved a single person.
+
+<img src="{{site.url}}/imgs/deathpie.png" style="display: block; margin: auto;" />
+
+*Pie chart showing how many people die in a deadly traffic accident*
