@@ -52,12 +52,27 @@ It is natural to assume that the closer you are a to a hospital, the faster the 
 
 <embed type="text/html" src="imgs/map_hospital_collision.html" width="100%" height="600"/>
 
+*Heat map showing collision locations relative to NYC hospitals*
+
 We can compute the distance to the nearest hospital for all collisions and compute the distributions split on fatal, nonfatal, fatal motorist collisions see below interactive plot. Evidently, there is a slight difference in the mean distance to nearest hospital, with fatal motorist collision having the largest mean distance. We also see that most collisions occur within 5 km to the nearest hospital. 
 
 <embed type="text/html" src="imgs/interactiveplot.html" width="100%" height="600"/> 
+
+*Historams showing distance to nearest hospital distributions*
 
 We compute the relative severity (how many out of the total collisison are collision that result in fatalities) for collisions that occur within and outside of the 5 km radius to nearest hospital we see that collision occuring within the 5 km radius have a fatality rate of 0.59% whilst collisions occuring outside the radius have a fatality rate of 0.65%. If we only consider motorist deaths, the difference becomes even larger. Collisions within the 5 km radius have a motorist fatality rate of 0.20% whilst outside the radius, the fatality rate increaes to 0.32%. We can compare to the average fatality rate of 0.60% and the average motorist fatality rate of 0.22%. Overall, we see that collisions occuring more than 5 km away form the nearest hospital have a higher fatality rate, especially when one considers motorist deaths. 
 
 These tendencies can naturally be explained by the speed limit increasing as you go further from the city center, where most of the hosptials are located. There are also more highways outside of the city center. Also, these do not necessarily mean that the increased fatality rates are due to long ambulance drives. What it does say is that there are signifcant number of fatal collisions that are not covered by the 5 km radius of the nearest hospital. 
 
 <embed type="text/html" src="imgs/persons_killed_hospitals.html" width="100%" height="600"/>
+
+*Heat map showing fatal collsisions outside of the 5 km radius to nearest hospital*
+
+## Hospital Stress: Added Strain due to Distant Collisions
+
+We can compute how many collisions occur closest to a given hospital. 
+
+<img src="{{site.url}}/imgs/hospitalstress.png" style="display: block; margin: auto;" />
+
+*Bar chart showing relative strain from collision occuring > 5 km away from nearest hospital*
+
