@@ -15,12 +15,11 @@ This online magazine will dive deeper into traffic accindents that cause death a
 
 *Heat map showing deaths in NYC caused by vehicular Collisions between 2013 and 2022*
 
-
 ## A step back
 
+We start by looking at vehicular collisions and how they evolve over time to see if there are any tendencies.
 
-
-
+<img src="{{site.url}}/imgs/time series.png" style="display: block; margin: auto;" />
 
 
 
