@@ -60,4 +60,4 @@ We compute the relative severity (how many out of the total collisison are colli
 
 These tendencies can naturally be explained by the speed limit increasing as you go further from the city center, where most of the hosptials are located. There are also more highways outside of the city center. Also, these do not necessarily mean that the increased fatality rates are due to long ambulance drives. What it does say is that there are signifcant number of fatal collisions that are not covered by the 5 km radius of the nearest hospital. 
 
-
+<embed type="text/html" src="imgs/persons_killed_hospitals.html" width="100%" height="600"/>
