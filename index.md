@@ -70,7 +70,6 @@ These tendencies can naturally be explained by the speed limit increasing as you
 
 5 km might not seem far, but according to [TomTom](https://www.tomtom.com/traffic-index/new-york-traffic/), the time it takes to travel 10 km is on average 24 min for 2022. That is 12 mins for 5 km distance. This does not take into account that Ambulances travel faster on average than normal cars. However, it would still take time to call the emergency services and for the ambulance to get going. 
 
-
 ## Hospital Stress: Added Strain due to Distant Collisions
 
 We can compute how many collisions occur closest to a given hospital as seen in the below bar charts. We are of course assuming that patients are transported to the nearest hospital upon colliding in traffic. 
@@ -80,3 +79,5 @@ We can compute how many collisions occur closest to a given hospital as seen in 
 *Bar chart showing relative strain from collision occuring > 5 km away from nearest hospital*
 
 Notably we see that Queens Hospital center is the hospital that is closest to most collisions occuring more than 5 km away from the nearest hospital. In fact, around 50% of the fatal collisions the hospital recieves stem from collisions occuring more than 5 km away. Kings County Hospital and Coney Island Hospital also have large proportions of distant collision patients.  
+
+

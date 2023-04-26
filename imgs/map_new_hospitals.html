@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_38077d8a391866c287192135c5a950a7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_38077d8a391866c287192135c5a950a7" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_38077d8a391866c287192135c5a950a7 = L.map(
+                "map_38077d8a391866c287192135c5a950a7",
+                {
+                    center: [40.72216510219054, -73.91547388483299],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ad6734c237b7270119f0526f6ac31ad0 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
+                {"attribution": "Map tiles by \u003ca target=\"_blank\" href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_38077d8a391866c287192135c5a950a7);
+        
+    
+            var heat_map_1c45544b4e88723cdd91fd6406588317 = L.heatLayer(
+                [[40.620487, -74.029305], [40.771038, -73.83413], [40.547924, -74.166954], [40.563145, -74.10787], [40.677746, -73.73096], [40.563915, -74.11637], [40.77417, -73.82934], [40.665447, -73.81571], [40.66675, -73.779945], [40.664993, -73.80229], [40.505527, -74.23819], [40.633083, -74.00558], [40.769283, -73.82445], [40.60567, -74.030945], [40.66653, -73.806274], [40.6476772, -74.0145875], [40.7432, -73.71935], [40.650337, -73.86849], [40.586315, -73.80653], [40.6528, -73.86389], [40.661385, -73.8841], [40.78322, -73.84586], [40.608253, -74.08879], [40.62577, -74.134735], [40.680687, -73.84459], [40.678255, -74.002722], [40.65616, -73.76736], [40.646374, -74.01591], [40.758785, -73.79047], [40.61816, -74.08492], [40.670403, -73.85629], [40.62615, -74.00494], [40.67376, -73.73431], [40.60638, -73.754715], [40.762386, -73.742935], [40.508614, -74.22375], [40.59561, -73.77656], [40.765137, -73.81944], [40.606686, -73.75015], [40.651047, -73.86689], [40.627827, -73.89021], [40.575333, -74.16179], [40.63073, -74.01734], [40.523396, -74.209595], [40.666573, -73.78632], [40.547245, -74.180244], [40.711033, -73.7281], [40.613373, -74.063255], [40.64712, -74.01517], [40.681927, -73.72874], [40.638264, -74.021095], [40.537262, -74.15051], [40.67412, -73.88081], [40.6414, -74.02125], [40.620968, -74.12374], [40.673325, -73.84326], [40.621357, -74.02198], [40.6742, -73.99984], [40.6722, -73.734604], [40.62806, -74.02029], [40.616425, -74.1664], [40.59325, -74.11065], [40.626663, -74.07565], [40.614456, -73.9154], [40.531895, -74.22113], [40.745842, -73.70654], [40.681484, -73.84788], [40.603615, -74.06931], [40.666588, -73.80809], [40.601368, -73.760056], [40.68419, -73.8703], [40.651405, -73.758896], [40.749283, -73.756645], [40.666187, -73.79176], [40.630325, -74.142555], [40.566494, -74.11377], [40.59075, -74.08837], [40.665386, -73.74493], [40.666595, -73.87176], [40.660797, -73.87183], [40.608433, -74.15544], [40.707436, -73.727554], [40.67974, -73.87839], [40.644455, -74.0183], [40.6075, -74.14637], [40.66549, -73.819534], [40.765137, -73.81944], [40.605423, -74.072464], [40.68666, -73.8795], [40.59515, -73.75321], [40.58993, -73.90059], [40.582584, -73.83022], [40.674232, -73.86177], [40.6468, -73.88496], [40.59951, -73.749794], [40.608833, -74.12118], [40.689735, -73.72674], [40.636044, -73.890686], [40.52257, -74.19001], [40.78694, -73.77558], [40.680305, -73.844536], [40.544487, -74.176506], [40.6338, -73.8897], [40.667667, -73.80715], [40.68326, -73.84152], [40.602074, -74.1672], [40.789528, -73.820435], [40.612293, -74.03412], [40.62474, -74.12785], [40.663914, -73.86716], [40.75565, -73.76716], [40.748398, -73.72879], [40.62782, -74.12126], [40.76465, -73.823494], [40.639996, -74.00488], [40.65433, -74.00742], [40.549496, -74.181244], [40.560085, -74.11318], [40.74486, -73.71112], [40.76315, -73.81261], [40.666935, -73.782715], [40.661156, -73.87101], [40.67818, -73.870705], [40.623253, -74.08383], [40.586746, -73.81712], [40.612522, -73.81978], [40.65616, -73.76736], [40.752243, -73.70212], [40.60439, -73.7408], [40.633858, -74.12596], [40.660625, -73.736275], [40.656124, -74.00591], [40.689842, -73.850075], [40.666355, -73.8045], [40.667076, -73.78266], [40.666355, -73.8045], [40.623974, -74.14903], [40.519127, -74.19714], [40.52358, -74.187225], [40.639645, -74.008835], [40.681656, -73.72783], [40.777016, -73.79336], [40.66563, -73.73921], [40.610256, -74.13232], [40.603573, -73.759315], [40.66518, -73.83175], [40.544487, -74.176506], [40.673233, -73.76394], [40.661728, -73.88331], [40.617443, -74.028404], [40.755985, -73.72724], [40.5953, -74.1619], [40.55682, -74.13603], [40.666405, -73.74538], [40.616077, -74.037384], [40.646637, -74.01589], [40.66615, -73.80575], [40.666306, -73.79171], [40.768536, -73.786705], [40.668667, -73.868324], [40.674385, -73.87897], [40.53759, -74.158844], [40.60095, -73.753716], [40.659172, -73.839874], [40.612747, -74.12712], [40.65616, -73.76736], [40.747433, -73.70811], [40.769096, -73.833664], [40.77306, -73.824684], [40.757946, -73.78671], [40.62391, -74.16741], [40.653873, -74.008156], [40.624477, -74.00819], [40.73832, -73.70374], [40.617897, -74.02931], [40.769283, -73.82445], [40.69366, -73.85217], [40.66392, -73.79111], [40.562523, -74.19211], [40.654156, -73.838646], [40.82, -73.81061], [40.69366, -73.85217], [40.760532, -73.753716], [40.57951, -73.83811], [40.60567, -74.030945], [40.67505, -73.73322], [40.589134, -73.80098], [40.63313, -74.075356], [40.650505, -74.01172], [40.78405, -73.79474], [40.63145, -73.887085], [40.630383, -73.895004], [40.62387, -74.07922], [40.765167, -73.819084], [40.789528, -73.820435], [40.57322, -74.106995], [40.665684, -73.820435], [40.701344, -74.01252], [40.62894, -74.116196], [40.781685, -73.84038], [40.73403, -73.723656], [40.67493, -73.86607], [40.74849, -73.728516], [40.676003, -73.865395], [40.665634, -73.758156], [40.7379, -73.714775], [40.603405, -74.08328], [40.585464, -74.19232], [40.684956, -73.87457], [40.583733, -74.08655], [40.769283, -73.82445], [40.640694, -74.0777], [40.61956, -74.01537], [40.762264, -73.78527], [40.608223, -74.1294], [40.674988, -73.856544], [40.666573, -73.78632], [40.63932, -74.02356], [40.60168, -74.1633], [40.75628, -73.7211], [40.61292, -74.13077], [40.604153, -74.05198], [40.674423, -74.00033], [40.590717, -74.194], [40.653656, -73.86239], [40.545456, -74.23052], [40.605568, -74.03118], [40.67054, -73.820885], [40.596085, -73.76216], [40.74, -73.73855], [40.53117, -74.22361], [40.609356, -74.06265], [40.66709, -73.76376], [40.513874, -74.23668], [40.631924, -74.016495], [40.57104, -74.10919], [40.620686, -74.11002], [40.6575, -73.839455], [40.65616, -73.76736], [40.615788, -74.01214], [40.611286, -74.108734], [40.798256, -73.82744], [40.685963, -73.85654], [40.546207, -74.21177], [40.634033, -73.88933], [40.66561, -73.73568], [40.66675, -73.779945], [40.715427, -73.72918], [40.509674, -74.247475], [40.677498, -73.87149], [40.62764, -73.99657], [40.740036, -73.70242], [40.56241, -74.197235], [40.60485, -74.02559], [40.615654, -74.12751], [40.702663, -74.012886], [40.671196, -73.84296], [40.676968, -73.83527], [40.66362, -73.777176], [40.59241, -73.789], [40.626663, -74.07565], [40.76217, -73.7568], [40.59018, -74.088875], [40.761993, -73.75849], [40.6094, -74.09011], [40.682747, -73.87537], [40.69377, -73.73578], [40.60686, -74.1158], [40.59981, -74.178246], [40.764988, -73.82067], [40.605335, -73.75528], [40.506187, -74.2349], [40.678417, -74.00294], [40.574905, -74.121735], [40.66662, -73.835464], [40.78973, -73.7942], [40.6012042, -74.0650758], [40.7416909, -73.7354052], [40.6789969, -73.7297895], [40.78419, -73.8458097], [40.6656136, -73.7356712], [40.5729078, -74.1370436], [40.6649593, -73.8222478], [40.5675778, -74.1271454], [40.6187344, -74.1760525], [40.5266411, -74.1681321], [40.5565344, -74.1281176], [40.6250536, -74.0191167], [40.761131, -73.812267], [40.6679546, -73.8700642], [40.6829405, -73.8671614], [40.5958903, -74.0858762], [40.6663322, -73.8105512], [40.6140876, -74.0661328], [40.6936625, -73.8521639], [40.5293737, -74.1613509], [40.6653987, -73.8295113], [40.5721317, -74.1080873], [40.5512542, -74.1345595], [40.6721741, -73.7610205], [40.6063974, -73.7517519], [40.6294862, -74.022639], [40.5664967, -74.1137614], [40.6670397, -73.7681947], [40.6736898, -74.0118029], [40.6889363, -73.7322397], [40.5535547, -74.1411639], [40.6670514, -73.7741023], [40.6488, -74.0134237], [40.6678458, -73.7761182], [40.6528929, -73.8667311], [40.6061034, -74.0798167], [40.6663322, -73.8105512], [40.6528929, -73.8667311], [40.6832423, -73.7258627], [40.6425396, -73.8765111], [40.5464206, -74.1414043], [40.5773093, -74.1011192], [40.5386637, -74.1880025], [40.6802965, -73.8446402], [40.7515157, -73.7476961], [40.5903776, -74.1068782], [40.6672125, -73.7808366], [40.53078, -74.22443], [40.6125584, -74.0360929], [40.6673698, -73.7826551], [40.6662948, -73.7989819], [40.6484415, -73.8824124], [40.6627814, -73.8808552], [40.5999021, -73.7615889], [40.6627814, -73.8808552], [40.7888914, -73.7870217], [40.5239976, -74.1860995], [40.5817949, -73.8492866], [40.6881494, -73.8488335], [40.6561603, -73.7673526], [40.6054518, -73.8985502], [40.636228, -73.8859432], [40.5166242, -74.202785], [40.7639417, -73.8281463], [40.7367512, -73.7110283], [40.6700692, -73.8686795], [40.7451526, -73.7343116], [40.6670937, -73.7637567], [40.6184997, -74.0395757], [40.7636677, -73.8230246], [40.6664134, -73.7881226], [40.7904014, -73.82344], [40.6664134, -73.7881226], [40.7829958, -73.7993323], [40.6012042, -74.0650758], [40.5955618, -73.7471003], [40.7374593, -73.7410827], [40.68424, -73.8460949], [40.6292495, -74.1232208], [40.6669713, -73.7912968], [40.5438696, -74.1444428], [40.666396, -73.7517593], [40.6230538, -74.1132634], [40.8198214, -73.8128465], [40.6670811, -73.810322], [40.6880907, -73.7357083], [40.6819859, -73.8497633], [40.6741459, -74.006006], [40.6655218, -73.7446568], [40.6859635, -73.8565294], [40.6655218, -73.7446568], [40.7677542, -73.8319235], [40.6060442, -74.0633482], [40.6337945, -74.0113274], [40.5758147, -74.1197852], [40.6816856, -73.8715626], [40.74091, -73.7266443], [40.5968498, -74.062054], [40.7644363, -73.7226787], [40.6936625, -73.8521639], [40.6813529, -73.8811681], [40.6420312, -74.0951457], [40.5952985, -74.1103789], [40.6339615, -74.0147538], [40.5647067, -74.1272083], [40.7672226, -73.7936144], [40.6596509, -73.7738282], [40.7148726, -73.7290966], [40.6598458, -73.835205], [40.7856002, -73.839357], [40.6728582, -73.871302], [40.789022, -73.8186415], [40.6423059, -74.0132314], [40.6357409, -74.0260387], [40.6203042, -74.0074276], [40.6563005, -73.8478533], [40.5933206, -73.7727134], [40.644042, -73.8775195], [40.595951, -74.0958614], [40.6367879, -73.740563], [40.7522009, -73.7261217], [40.6736299, -73.7327734], [40.6643263, -73.7466882], [40.610422, -74.1512], [40.6656299, -73.7392073], [40.6912455, -73.8508783], [40.6412074, -73.8771979], [40.650285, -73.7349679], [40.765057, -73.8129201], [40.6866849, -73.8539966], [40.6649967, -73.8022829], [40.6767657, -73.8805058], [40.6227987, -74.0283499], [40.6653987, -73.8295113], [40.6869658, -73.7383125], [40.6284454, -73.9963362], [40.789528, -73.820422], [40.6686085, -73.781667], [40.6694586, -73.8628301], [40.6936625, -73.8521639], [40.764651, -73.823484], [40.674021, -73.8610722], [40.6979494, -73.7366502], [40.6356257, -74.0170629], [40.7413881, -73.7248837], [40.5783776, -74.0940362], [40.7491907, -73.7078596], [40.615227, -74.01272], [40.62036, -74.1317], [40.587444, -73.812164], [40.772697, -73.83396], [40.641987, -74.01724], [40.635975, -74.00124], [40.763496, -73.80734], [40.763668, -73.82303], [40.627365, -74.166565], [40.618294, -74.13136], [40.595886, -73.76386], [40.66632, -73.85035], [40.61618, -74.040344], [40.588345, -74.192986], [40.626663, -74.07565], [40.666008, -73.789536], [40.62541, -74.07495], [40.632435, -73.88818], [40.64464, -74.01757], [40.638504, -74.03162]],
+                {"blur": 15, "maxZoom": 18, "minOpacity": 0.5, "radius": 10}
+            ).addTo(map_38077d8a391866c287192135c5a950a7);
+        
+    
+            var marker_34214846ae687121130d0302d2e5e65b = L.marker(
+                [40.738710402563, -73.878351155182],
+                {}
+            ).addTo(map_38077d8a391866c287192135c5a950a7);
+        
+    
+        var popup_393d5e34c9a69a737dfe175b3c855ab6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a80745c8ab60708a27a56adad670b006 = $(`<div id="html_a80745c8ab60708a27a56adad670b006" style="width: 100.0%; height: 100.0%;">Elmhurst Hospital Center</div>`)[0];
+                popup_393d5e34c9a69a737dfe175b3c855ab6.setContent(html_a80745c8ab60708a27a56adad670b006);
+            
+        
+
+        marker_34214846ae687121130d0302d2e5e65b.bindPopup(popup_393d5e34c9a69a737dfe175b3c855ab6)
+        ;
+
+        
+    
+    
+            var circle_118baf1c1785b2fef187899e80cc2429 = L.circle(
+                [40.738710402563, -73.878351155182],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+            ).addTo(map_38077d8a391866c287192135c5a950a7);
+        
+    
+            var marker_88070c0649db78b2b28ca8700a2a56d2 = L.marker(
+                [40.857397104611, -73.846571204087],
+                {}
+            ).addTo(map_38077d8a391866c287192135c5a950a7);
+        
+    
+        var popup_5d6e20ae6b5ded04574433ab98110224 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_57d4353d38840061c2a0e2e021c8ad9f = $(`<div id="html_57d4353d38840061c2a0e2e021c8ad9f" style="width: 100.0%; height: 100.0%;">Jacobi Medical Center</div>`)[0];
+                popup_5d6e20ae6b5ded04574433ab98110224.setContent(html_57d4353d38840061c2a0e2e021c8ad9f);
+            
+        
+
+        marker_88070c0649db78b2b28ca8700a2a56d2.bindPopup(popup_5d6e20ae6b5ded04574433ab98110224)
+        ;
+
+        
+    
+    
+            var circle_4eacce27dd6007b5d2e9f759db5518bb = L.circle(
+                [40.857397104611, -73.846571204087],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+            ).addTo(map_38077d8a391866c287192135c5a950a7);
+        
+    
+            var marker_9a339e25642e941c79cfca99260e0e90 = L.marker(
+                [40.784557024105, -73.943795653643],
+                {}
+            ).addTo(map_38077d8a391866c287192135c5a950a7);
+        
+    
+        var popup_235a843aa190df51fdb4efd5f5615509 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_49a18b71e0b522d8d74536c7a7d96cdf = $(`<div id="html_49a18b71e0b522d8d74536c7a7d96cdf" style="width: 100.0%; height: 100.0%;">Metropolitan Hospital Center</div>`)[0];
+                popup_235a843aa190df51fdb4efd5f5615509.setContent(html_49a18b71e0b522d8d74536c7a7d96cdf);
+            
+        
+
+        marker_9a339e25642e941c79cfca99260e0e90.bindPopup(popup_235a843aa190df51fdb4efd5f5615509)
+        ;
+
+        
+    
+    
+            var circle_b21724bd47698455832ade13e236b4db = L.circle(
+                [40.784557024105, -73.943795653643],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+            ).addTo(map_38077d8a391866c287192135c5a950a7);
+        
+    
+            var marker_69db0e7ac1649c858bbfac75cdcc1fca = L.marker(
+                [40.880463372456, -73.881592877502],
+                {}
+            ).addTo(map_38077d8a391866c287192135c5a950a7);
+        
+    
+        var popup_63ed99f3ff386139f7a199d2322d0d31 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b75c9a06b1d5d0a2de01853540551262 = $(`<div id="html_b75c9a06b1d5d0a2de01853540551262" style="width: 100.0%; height: 100.0%;">North Central Bronx Hospital</div>`)[0];
+                popup_63ed99f3ff386139f7a199d2322d0d31.setContent(html_b75c9a06b1d5d0a2de01853540551262);
+            
+        
+
+        marker_69db0e7ac1649c858bbfac75cdcc1fca.bindPopup(popup_63ed99f3ff386139f7a199d2322d0d31)
+        ;
+
+        
+    
+    
+            var circle_53961172b351264537a2ea61b404555a = L.circle(
+                [40.880463372456, -73.881592877502],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+            ).addTo(map_38077d8a391866c287192135c5a950a7);
+        
+    
+            var marker_f1f648edf41709d2a3f263f06e47c725 = L.marker(
+                [40.655761808605, -73.944662615537],
+                {}
+            ).addTo(map_38077d8a391866c287192135c5a950a7);
+        
+    
+        var popup_e88f2dd64b1bf0c80efff9de940281c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a2732cdd3b9de75e28a4099aaf52f46d = $(`<div id="html_a2732cdd3b9de75e28a4099aaf52f46d" style="width: 100.0%; height: 100.0%;">Kings County Hospital Center</div>`)[0];
+                popup_e88f2dd64b1bf0c80efff9de940281c1.setContent(html_a2732cdd3b9de75e28a4099aaf52f46d);
+            
+        
+
+        marker_f1f648edf41709d2a3f263f06e47c725.bindPopup(popup_e88f2dd64b1bf0c80efff9de940281c1)
+        ;
+
+        
+    
+    
+            var circle_914b3439681abe2232338660a2c8ed66 = L.circle(
+                [40.655761808605, -73.944662615537],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+            ).addTo(map_38077d8a391866c287192135c5a950a7);
+        
+    
+            var marker_7a28404313ca251f39f797f5f0f11f65 = L.marker(
+                [40.73962320748, -73.976572846645],
+                {}
+            ).addTo(map_38077d8a391866c287192135c5a950a7);
+        
+    
+        var popup_31566fe016375ea22003cdbe2dd66cf0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f09c2d1b5607c4003360abe1678a23f4 = $(`<div id="html_f09c2d1b5607c4003360abe1678a23f4" style="width: 100.0%; height: 100.0%;">Bellevue Hospital Center</div>`)[0];
+                popup_31566fe016375ea22003cdbe2dd66cf0.setContent(html_f09c2d1b5607c4003360abe1678a23f4);
+            
+        
+
+        marker_7a28404313ca251f39f797f5f0f11f65.bindPopup(popup_31566fe016375ea22003cdbe2dd66cf0)
+        ;
+
+        
+    
+    
+            var circle_d6b3d4fb1dd8679f4f12aec88048ee7d = L.circle(
+                [40.73962320748, -73.976572846645],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+            ).addTo(map_38077d8a391866c287192135c5a950a7);
+        
+    
+            var marker_d5ffa77193ff53cc1644ae85551f2630 = L.marker(
+                [40.586645433957, -73.965830115778],
+                {}
+            ).addTo(map_38077d8a391866c287192135c5a950a7);
+        
+    
+        var popup_b6dfc481ec0d7650fd23ced3fc78f04a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc442c4cc00a54cb27a3862063ef4b34 = $(`<div id="html_cc442c4cc00a54cb27a3862063ef4b34" style="width: 100.0%; height: 100.0%;">Coney Island Hospital</div>`)[0];
+                popup_b6dfc481ec0d7650fd23ced3fc78f04a.setContent(html_cc442c4cc00a54cb27a3862063ef4b34);
+            
+        
+
+        marker_d5ffa77193ff53cc1644ae85551f2630.bindPopup(popup_b6dfc481ec0d7650fd23ced3fc78f04a)
+        ;
+
+        
+    
+    
+            var circle_d1e11fc37eb46bdac956157bc64fe014 = L.circle(
+                [40.586645433957, -73.965830115778],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+            ).addTo(map_38077d8a391866c287192135c5a950a7);
+        
+    
+            var marker_68e4cd038caa9f40e117806285249a72 = L.marker(
+                [40.71311535449, -73.792820999789],
+                {}
+            ).addTo(map_38077d8a391866c287192135c5a950a7);
+        
+    
+        var popup_edd01c58b2991054e220b82c51368840 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3befe008bc31200739724c909d78fcef = $(`<div id="html_3befe008bc31200739724c909d78fcef" style="width: 100.0%; height: 100.0%;">Queens Hospital Center</div>`)[0];
+                popup_edd01c58b2991054e220b82c51368840.setContent(html_3befe008bc31200739724c909d78fcef);
+            
+        
+
+        marker_68e4cd038caa9f40e117806285249a72.bindPopup(popup_edd01c58b2991054e220b82c51368840)
+        ;
+
+        
+    
+    
+            var circle_037f0d2f2664f4a97cc0cf4dfd303d26 = L.circle(
+                [40.71311535449, -73.792820999789],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+            ).addTo(map_38077d8a391866c287192135c5a950a7);
+        
+    
+            var marker_6c99b3dbe12dbca21c09a3b66a8fe516 = L.marker(
+                [40.817688484049, -73.924200271483],
+                {}
+            ).addTo(map_38077d8a391866c287192135c5a950a7);
+        
+    
+        var popup_e701a3f5c6d94ea06a12025655910ed6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5664e655e4db1dc31f4bb3dc42623b88 = $(`<div id="html_5664e655e4db1dc31f4bb3dc42623b88" style="width: 100.0%; height: 100.0%;">Lincoln Medical and Mental Health Center</div>`)[0];
+                popup_e701a3f5c6d94ea06a12025655910ed6.setContent(html_5664e655e4db1dc31f4bb3dc42623b88);
+            
+        
+
+        marker_6c99b3dbe12dbca21c09a3b66a8fe516.bindPopup(popup_e701a3f5c6d94ea06a12025655910ed6)
+        ;
+
+        
+    
+    
+            var circle_aff6ab88c2505cd076d50080c23cc521 = L.circle(
+                [40.817688484049, -73.924200271483],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+            ).addTo(map_38077d8a391866c287192135c5a950a7);
+        
+    
+            var marker_4d9c408eddd918cbb8c2ba297446e690 = L.marker(
+                [40.814275217502, -73.940602831291],
+                {}
+            ).addTo(map_38077d8a391866c287192135c5a950a7);
+        
+    
+        var popup_cd3ced2d6476c9d248872103502f83e4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e7f569d72c18e733ac735f6574e546b0 = $(`<div id="html_e7f569d72c18e733ac735f6574e546b0" style="width: 100.0%; height: 100.0%;">Harlem Hospital Center</div>`)[0];
+                popup_cd3ced2d6476c9d248872103502f83e4.setContent(html_e7f569d72c18e733ac735f6574e546b0);
+            
+        
+
+        marker_4d9c408eddd918cbb8c2ba297446e690.bindPopup(popup_cd3ced2d6476c9d248872103502f83e4)
+        ;
+
+        
+    
+    
+            var circle_673060f3e845ead8f166320580778e13 = L.circle(
+                [40.814275217502, -73.940602831291],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+            ).addTo(map_38077d8a391866c287192135c5a950a7);
+        
+    
+            var marker_8e8a5952bdcd630d1551d808ac21a67a = L.marker(
+                [40.70052661478, -73.941643858765],
+                {}
+            ).addTo(map_38077d8a391866c287192135c5a950a7);
+        
+    
+        var popup_3773ff4f790f995c56cd11272aec627b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eed6bf6797c909b6aa5be64ffa6d9bb5 = $(`<div id="html_eed6bf6797c909b6aa5be64ffa6d9bb5" style="width: 100.0%; height: 100.0%;">Woodhull Medical and Mental Health Center</div>`)[0];
+                popup_3773ff4f790f995c56cd11272aec627b.setContent(html_eed6bf6797c909b6aa5be64ffa6d9bb5);
+            
+        
+
+        marker_8e8a5952bdcd630d1551d808ac21a67a.bindPopup(popup_3773ff4f790f995c56cd11272aec627b)
+        ;
+
+        
+    
+    
+            var circle_e995d86a9e4a6195b0fc39275f54f5c0 = L.circle(
+                [40.70052661478, -73.941643858765],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+            ).addTo(map_38077d8a391866c287192135c5a950a7);
+        
+    
+            var marker_d66edb089f3e274d9394f93396182196 = L.marker(
+                [40.72414507845249, -73.76578318072015],
+                {}
+            ).addTo(map_38077d8a391866c287192135c5a950a7);
+        
+    
+        var popup_2615e340b381163500e9ba7f78c91faa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_828b9a4cf1b9ed441f3fc0bc475bc937 = $(`<div id="html_828b9a4cf1b9ed441f3fc0bc475bc937" style="width: 100.0%; height: 100.0%;">New Hospital 1</div>`)[0];
+                popup_2615e340b381163500e9ba7f78c91faa.setContent(html_828b9a4cf1b9ed441f3fc0bc475bc937);
+            
+        
+
+        marker_d66edb089f3e274d9394f93396182196.bindPopup(popup_2615e340b381163500e9ba7f78c91faa)
+        ;
+
+        
+    
+    
+            var circle_9cd12272c197ab539947f6975755117e = L.circle(
+                [40.72414507845249, -73.76578318072015],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+            ).addTo(map_38077d8a391866c287192135c5a950a7);
+        
+    
+            var marker_97dfd7676c232bfe4153b3e47d198096 = L.marker(
+                [40.611505055214586, -74.08623071832608],
+                {}
+            ).addTo(map_38077d8a391866c287192135c5a950a7);
+        
+    
+        var popup_4e3fc4550fff1384dbbab7e5af393a5c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_096f243b11ed671a6ae33108b5a9092e = $(`<div id="html_096f243b11ed671a6ae33108b5a9092e" style="width: 100.0%; height: 100.0%;">New Hospital 2</div>`)[0];
+                popup_4e3fc4550fff1384dbbab7e5af393a5c.setContent(html_096f243b11ed671a6ae33108b5a9092e);
+            
+        
+
+        marker_97dfd7676c232bfe4153b3e47d198096.bindPopup(popup_4e3fc4550fff1384dbbab7e5af393a5c)
+        ;
+
+        
+    
+    
+            var circle_7721a51d6459205ca6f2a349800fe235 = L.circle(
+                [40.611505055214586, -74.08623071832608],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+            ).addTo(map_38077d8a391866c287192135c5a950a7);
+        
+    
+            var marker_8109feb84849ca1202e60757378ca636 = L.marker(
+                [40.611505055214586, -74.08623071832608],
+                {}
+            ).addTo(map_38077d8a391866c287192135c5a950a7);
+        
+    
+        var popup_cc03f289caa1f02f7c88283e1872051c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1941c6d39098c63b8248ba2ac704cf4f = $(`<div id="html_1941c6d39098c63b8248ba2ac704cf4f" style="width: 100.0%; height: 100.0%;">New Hospital 1</div>`)[0];
+                popup_cc03f289caa1f02f7c88283e1872051c.setContent(html_1941c6d39098c63b8248ba2ac704cf4f);
+            
+        
+
+        marker_8109feb84849ca1202e60757378ca636.bindPopup(popup_cc03f289caa1f02f7c88283e1872051c)
+        ;
+
+        
+    
+    
+            var circle_1fa9ef0eb0558de8380b550a0a18f887 = L.circle(
+                [40.611505055214586, -74.08623071832608],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+            ).addTo(map_38077d8a391866c287192135c5a950a7);
+        
+    
+            var marker_16030dc999444fc14379e4a89eee7602 = L.marker(
+                [40.655705459263636, -73.84811950713258],
+                {}
+            ).addTo(map_38077d8a391866c287192135c5a950a7);
+        
+    
+        var popup_1ea1c6342803f8c2da8b481eddfeb82e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_119eb64121d84d54c63ce377a2ce3338 = $(`<div id="html_119eb64121d84d54c63ce377a2ce3338" style="width: 100.0%; height: 100.0%;">New Hospital 2</div>`)[0];
+                popup_1ea1c6342803f8c2da8b481eddfeb82e.setContent(html_119eb64121d84d54c63ce377a2ce3338);
+            
+        
+
+        marker_16030dc999444fc14379e4a89eee7602.bindPopup(popup_1ea1c6342803f8c2da8b481eddfeb82e)
+        ;
+
+        
+    
+    
+            var circle_5cff6c886a1cee6173eb3557f857a90d = L.circle(
+                [40.655705459263636, -73.84811950713258],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+            ).addTo(map_38077d8a391866c287192135c5a950a7);
+        
+    
+            var marker_564ff3571d6dcb26f4ebf3dabfebf47e = L.marker(
+                [40.72412343060179, -73.76579122065728],
+                {}
+            ).addTo(map_38077d8a391866c287192135c5a950a7);
+        
+    
+        var popup_7bd79afa3df347811dd6a5aed171f512 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2da3e4105a877c92a193436251f4c3fd = $(`<div id="html_2da3e4105a877c92a193436251f4c3fd" style="width: 100.0%; height: 100.0%;">New Hospital 3</div>`)[0];
+                popup_7bd79afa3df347811dd6a5aed171f512.setContent(html_2da3e4105a877c92a193436251f4c3fd);
+            
+        
+
+        marker_564ff3571d6dcb26f4ebf3dabfebf47e.bindPopup(popup_7bd79afa3df347811dd6a5aed171f512)
+        ;
+
+        
+    
+    
+            var circle_f3a9a3ef61d0051c977ede61e1e7d889 = L.circle(
+                [40.72412343060179, -73.76579122065728],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+            ).addTo(map_38077d8a391866c287192135c5a950a7);
+        
+</script>
+</html>
