@@ -62,17 +62,21 @@ We can compute the distance to the nearest hospital for all collisions and compu
 
 We compute the relative severity (how many out of the total collisison are collision that result in fatalities) for collisions that occur within and outside of the 5 km radius to nearest hospital we see that collision occuring within the 5 km radius have a fatality rate of 0.59% whilst collisions occuring outside the radius have a fatality rate of 0.65%. If we only consider motorist deaths, the difference becomes even larger. Collisions within the 5 km radius have a motorist fatality rate of 0.20% whilst outside the radius, the fatality rate increaes to 0.32%. We can compare to the average fatality rate of 0.60% and the average motorist fatality rate of 0.22%. Overall, we see that collisions occuring more than 5 km away form the nearest hospital have a higher fatality rate, especially when one considers motorist deaths. 
 
-These tendencies can naturally be explained by the speed limit increasing as you go further from the city center, where most of the hosptials are located. There are also more highways outside of the city center. Also, these do not necessarily mean that the increased fatality rates are due to long ambulance drives. What it does say is that there are signifcant number of fatal collisions that are not covered by the 5 km radius of the nearest hospital. 
+These tendencies can naturally be explained by the speed limit increasing as you go further from the city center, where most of the hosptials are located. There are also more highways outside of the city center. Also, these do not necessarily mean that the increased fatality rates are due to long ambulance drives. What it does say is that there are signifcant number of fatal collisions that are not covered by the 5 km radius of the nearest hospital.
 
 <embed type="text/html" src="imgs/persons_killed_hospitals.html" width="100%" height="600"/>
 
 *Heat map showing fatal collsisions outside of the 5 km radius to nearest hospital*
 
+5 km might not seem far, but according to [TomTom](https://www.tomtom.com/traffic-index/new-york-traffic/), the time it takes to travel 10 km is on average 24 min for 2022. That is 12 mins for 5 km distance. This does not take into account that Ambulances travel faster on average than normal cars. However, it would still take time to call the emergency services and for the ambulance to get going. 
+
+
 ## Hospital Stress: Added Strain due to Distant Collisions
 
-We can compute how many collisions occur closest to a given hospital. 
+We can compute how many collisions occur closest to a given hospital as seen in the below bar charts. We are of course assuming that patients are transported to the nearest hospital upon colliding in traffic. 
 
 <img src="{{site.url}}/imgs/hospitalstress.png" style="display: block; margin: auto;" />
 
 *Bar chart showing relative strain from collision occuring > 5 km away from nearest hospital*
 
+Notably we see that Queens Hospital center is the hospital that is closest to most collisions occuring more than 5 km away from the nearest hospital. In fact, around 50% of the fatal collisions the hospital recieves stem from collisions occuring more than 5 km away. Kings County Hospital and Coney Island Hospital also have large proportions of distant collision patients.  
