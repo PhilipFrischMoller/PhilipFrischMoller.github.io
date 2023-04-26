@@ -80,19 +80,21 @@ We can compute how many collisions occur closest to a given hospital as seen in 
 
 Notably we see that Queens Hospital center is the hospital that is closest to most collisions occuring more than 5 km away from the nearest hospital. In fact, around 50% of the fatal collisions the hospital recieves stem from collisions occuring more than 5 km away. Kings County Hospital and Coney Island Hospital also have large proportions of distant collision patients.  
 
-# New Hospitals: Optimal locations for New Hospitals
+# Solution: New Hospitals?
 
-Using Kmeans clustering, we can find optimal placements for future hospitals based solely on collision coverage. Optimally, one would get 3 more hosptials denoted as 'New Hospital 1', 'New Hospital 2' and 'New Hospital 3' in the below shown map.
+## Optimal locations for New Hospitals
+
+Using Kmeans clustering, we can find optimal placements for future hospitals based solely on collision coverage. We can then compute the mean shortest distance to a hospital given the addition of new hospitals. The incremental inpact of additional hospitals shows that after 4 new hospitals, we can decrease the average shortest distance by 0.5 km. 
+
+<img src="{{site.url}}/imgs/mean.png" style="display: block; margin: auto;" />
+
+*Average shortest distance to hospital given the addition of new hosptials. The teal line represents the current mean distance without any additional hospitals*
+
+Using Kmeans inertia gradients, optimality is reached when NYC builds 3 additional hosptials denoted as 'New Hospital 1', 'New Hospital 2' and 'New Hospital 3' in the below shown map. Optimality is based on the coverage of collisions occuring over 5 km away from the nearest hospital.
 
 <embed type="text/html" src="imgs/map_new_hospitals.html" width="100%" height="600"/>
 
 *Plot showing how the 3 new hospitals cover collisions not covered by a 5km radius from the current hospitals*
-
-Plotting the distance to nearest hospital distributions, it is evident that the average distance has not decreased substantially, but rather some of the more distant collisions are now closer to a hospital. 
-
-<embed type="text/html" src="imgs/interactiveplot_newhos.html" width="100%" height="620"/> 
-
-*Histograms showing distance to nearest hospital distributions for the additional hospitals*
 
 <img src="{{site.url}}/imgs/hospitalstress_newhos.png" style="display: block; margin: auto;" />
 
@@ -100,7 +102,11 @@ Plotting the distance to nearest hospital distributions, it is evident that the 
 
 'New Hospital 2' has evidently taken alot of what collisions that were previously assigned to Queens. 'New Hospital 2' also leads on number of collisions resulting in fatalities. 'New Hospital 1', 'New Hospital 3' seem like huge investments that cover the least amount of total collisions. However, the addition of these new hospitals has also distributed the collisions that occur furhter than 5 km away more uniformly across the hospitals.  
 
+## Rellocation of Existing Hospitals
+
 What if we instead of building 3 new hospitals, we simply moved the existing hospitals to create a better covering of the collisions. This would naturally be an insanely expensive undertaking, but will serve as a good visualisation of optimal hospital locations based solely on vehicular collisions. 
+
+
 
 
 
