@@ -68,7 +68,7 @@ These tendencies can naturally be explained by the speed limit increasing as you
 
 *Heat map showing fatal collsisions outside of the 5 km radius to nearest hospital*
 
-5 km might not seem far, but according to [TomTom](https://www.tomtom.com/traffic-index/new-york-traffic/), the time it takes to travel 10 km is on average 24 min for 2022. That is 12 mins for 5 km distance. This does not take into account that Ambulances travel faster on average than normal cars. However, it would still take time to call the emergency services and for the ambulance to get going. 
+5 km might not seem far, but according to [TomTom](https://www.tomtom.com/traffic-index/new-york-traffic/), the time it takes to travel 10 km is on average 24 min for 2022. That is 12 mins for 5 km distance. This does not take into account that Ambulances travel faster on average than normal cars. However, it would still take time to call the emergency services and for the ambulance to get going. Likewise, the distance given here is the straight line distance, which is significantly shorter than if one actually drove on the roads.
 
 ## Hospital Stress: Added Strain due to Distant Collisions
 
@@ -88,14 +88,20 @@ Using Kmeans clustering, we can find optimal placements for future hospitals bas
 
 *Plot showing how the 3 new hospitals cover collisions not covered by a 5km radius from the current hospitals*
 
-Plotting the distance to nearest hospital distributions, it is evident that the average distance has decreased substantially. Furhter
+Plotting the distance to nearest hospital distributions, it is evident that the average distance has not decreased substantially, but rather some of the more distant collisions are now closer to a hospital. 
 
-<embed type="text/html" src="imgs/interactiveplot_newhos.html" width="100%" height="600"/> 
+<embed type="text/html" src="imgs/interactiveplot_newhos.html" width="100%" height="620"/> 
 
 *Histograms showing distance to nearest hospital distributions for the additional hospitals*
 
 <img src="{{site.url}}/imgs/hospitalstress_newhos.png" style="display: block; margin: auto;" />
 
 *Bar chart showing relative strain from collision occuring > 5 km away from nearest hospital with the additional three hospitals included*
+
+'New Hospital 2' has evidently taken alot of what collisions that were previously assigned to Queens. 'New Hospital 2' also leads on number of collisions resulting in fatalities. 'New Hospital 1', 'New Hospital 3' seem like huge investments that cover the least amount of total collisions. However, the addition of these new hospitals has also distributed the collisions that occur furhter than 5 km away more uniformly across the hospitals.  
+
+What if we instead of building 3 new hospitals, we simply moved the existing hospitals to create a better covering of the collisions. This would naturally be an insanely expensive undertaking, but will serve as a good visualisation of optimal hospital locations based solely on vehicular collisions. 
+
+
 
 
