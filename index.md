@@ -69,7 +69,7 @@ It is natural to assume that the closer you are a to a hospital, the faster the 
 
 We can compute the distance to the nearest hospital for all collisions and compute the distributions split on fatal, nonfatal, fatal motorist collisions see below interactive plot. Evidently, there is a slight difference in the mean distance to nearest hospital, with fatal motorist collision having the largest mean distance. We also see that most collisions occur within 5 km to the nearest hospital. 
 
-<embed type="text/html" src="imgs/interactiveplot.html" width="100%" height="600"/> 
+<embed type="text/html" src="imgs/interactiveplot.html" width="100%" height="620"/> 
 
 *Histograms showing distance to nearest hospital distributions*
 
