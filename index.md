@@ -113,6 +113,10 @@ Using Kmeans inertia gradients, optimality is reached when NYC builds 3 addition
 
 The mean distance to nearest hospital has decreased to 2.97 km. There are now only 9.8% of collisions that fall outside of the 5 km radius. The addition of the 3 new hospitals has actually made it such that the mortality rate outside of the 5 km is more or less equal to inside the 5 km radius (0.66% and 0.60% respectively.)
 
+<embed type="text/html" src="imgs/interactiveplot_newhos.html" width="100%" height="600"/> 
+
+*Histograms showing distance to nearest hospital distributions with the additional hospitals*
+
 <img src="{{site.url}}/imgs/hospitalstress_newhos.png" style="display: block; margin: auto;" />
 
 *Bar chart showing relative strain from collision occurring > 5 km away from nearest hospital with the additional three hospitals included*
