@@ -110,13 +110,13 @@ Using Kmeans inertia gradients, optimality is reached when NYC builds 3 addition
 
 *Plot showing how the 3 new hospitals cover collisions not covered by a 5km radius from the current hospitals*
 
-The mean distance to nearest hospital has decreased to 2.97 km. There are now only 9.8% of collisions that fall outside of the 5 km radius. The addition of the 3 new hospitals has actually made it such that the mortality rate outside of the 5 km is less than inside the 5 km radius (0.35% and 0.66% respectively.)
+The mean distance to nearest hospital has decreased to 2.97 km. There are now only 9.8% of collisions that fall outside of the 5 km radius. The addition of the 3 new hospitals has actually made it such that the mortality rate outside of the 5 km is more or less equal to inside the 5 km radius (0.66% and 0.60% respectively.)
 
 <img src="{{site.url}}/imgs/hospitalstress_newhos.png" style="display: block; margin: auto;" />
 
 *Bar chart showing relative strain from collision occurring > 5 km away from nearest hospital with the additional three hospitals included*
 
-'New Hospital 2' has evidently taken a lot of what collisions that were previously assigned to Queens. 'New Hospital 2' also leads on number of collisions resulting in fatalities. This is probably a good choice for a hospital. 'New Hospital 1', 'New Hospital 3' seem like huge investments that also cover the least number of total collisions out of any hospital. That being said the addition of these new hospitals has also distributed the collisions that occur further than 5 km away more uniformly across the hospitals.  
+'New Hospital 2' has evidently taken a lot of what collisions that were previously assigned to Queens. 'New Hospital 1' also leads on number of collisions resulting in fatalities. This is probably a good choice for a new additional hospital. The addition of these new hospitals has also distributed the collisions that occur further than 5 km away more uniformly across the hospitals.  
 
 ## Rellocation of Existing Hospitals
 
@@ -126,7 +126,7 @@ What if we instead of building 3 new hospitals, we simply moved the existing hos
 
 *Heat map showing fatal collisions alongside a 5 km radius from each newly relocated hospital*
 
-We note that after the relocation of all 10 hospitals, we are left with a mean shortest distance to hospital of 2.95, which is shorter than the addition of 5 extra hospitals. Further more, we can see that the collisions are asigned alot more uniformly between the hospitals or cluster centers.
+We note that after the relocation of all 11 hospitals, we are left with a mean shortest distance to hospital of 2.85, which is shorter than the addition of 5 extra hospitals. Further more, we can see that the collisions are asigned alot more uniformly between the hospitals or cluster centers. However, when we look at fatality rates the picture is not as good. We see a relative fatality rate of 0.77% outside of the 5 km radius and 0.59% within the 5 km radius. For motorists its 0.40% and 0.21% respectively. This naturally means that the hospital coverage covers less of the fatal accidents than the original setup. This is likely due to the worse coverage within the city center where most pedestrian accidents occur and as we have seen, pedestrians are far more likely to die in an accident.
 
 <img src="{{site.url}}/imgs/hospitalstress_v2.png" style="display: block; margin: auto;" />
 
@@ -140,4 +140,5 @@ We can finally, based on the above interactive bar chart, that the relocation yi
 
 # Concluding words
 
-This has been an interactive deep dive into NYC vehicular collisions and how one would, in the ideal world where cost is of negliable concern, place hospitals to better cover the vehicular collisions. We also investigated the inherent tendencies in the collisions and how this can also lead to a better understanding of some social mechanisms that exist in society. 
+This has been an interactive deep dive into NYC vehicular collisions and how one would, in the ideal world where cost is of negliable concern, place hospitals to better cover the vehicular collisions. We also investigated the inherent tendencies in the collisions and how this can also lead to a better understanding of some social mechanisms that exist in society. We have also seen how the current hospital locations actually, in some metrics, outperforms the optimised locations. For the best coverage of vehicular accidents it is recommended to build more hospitals.
+
