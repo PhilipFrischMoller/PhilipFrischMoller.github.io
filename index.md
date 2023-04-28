@@ -17,7 +17,6 @@ In NYC alone, 2,247 people have lost their lives on the streets due to traffic a
 
 *Pie charts visualising the representation of different victim types*
 
-
 This online magazine will dive deeper into traffic accidents that cause death and injury, in NYC from 2013 to 2022. We aim to investigate hospital coverage and figure out whether the distance to the hospitals play a role in the deadliness of the accidents, and model optimal new locations for hospitals in NYC.
 
 <embed type="text/html" src="imgs/map_person_death.html" width="100%" height="600"/>
@@ -40,11 +39,6 @@ What is perhaps counter intuitive is that most of the collisions occur during th
 
 *Top 10 contributing factors for collisions*
 
-When a fatal collision occurs, the vast majority has only one fatality as shown in the pie chart below. This means that the other people involved got away with nonfatal injuries or the accident simply only involved a single person. 
-
-<img src="{{site.url}}/imgs/deathpie.png" style="display: block; margin: auto;" />
-
-*Pie chart showing how many people die in a deadly traffic accident*
 
 We shall now look at where the most severe collision occurs. As evident from the below plots, all boroughs are equally represented in terms of collision severity, although Staten Island seems to host, on average, more severe collisions. When we differentiate between victim types, i.e., motorists, cyclists and pedestrians, we see that pedestrians are killed more in the inner city. Queens, Staten Island and the Bronx share high motorist fatalities. This all seems to indicate that the collisions severity is somehow linked to the location of the collision. 
 
