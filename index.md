@@ -24,7 +24,7 @@ This online magazine will dive deeper into traffic accidents that cause death an
 *Heat map showing deaths in NYC caused by vehicular Collisions between 2013 and 2022*
 
 
-<embed type="text/html" src="imgs/yearheatmap.html" width="100%" height="600"/>
+<embed type="text/html" src="imgs/yearheatmap.html" width="100%" height="800"/>
 
 *Interactive plot showing amount of collisions per postal code per year*
 
