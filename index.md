@@ -23,6 +23,12 @@ This online magazine will dive deeper into traffic accidents that cause death an
 
 *Heat map showing deaths in NYC caused by vehicular Collisions between 2013 and 2022*
 
+
+<embed type="text/html" src="imgs/yearheatmap.html" width="100%" height="600"/>
+
+*Interactive plot showing amount of collisions per postal code per year*
+
+
 # A step back: Exploring the Data
 
 We start by looking at vehicular collisions and how they evolve over time to see if there are any tendencies. Evidently, most collisions occur in the weekdays during rush hour both mornings and evenings after work. There has been a significant decrease in collision rates in the last few years, although, there has been no significant change in the mortality rate. Interestingly, it seems that mortalities occur mostly in the weekends, where the collision rate is lowest. 
@@ -66,6 +72,8 @@ We can compute the distance to the nearest hospital for all collisions and compu
 
 *Histograms showing distance to nearest hospital distributions*
 
+18.5% of collisions that result in death or injury fall outside of the 5 km radius to nearest hospital.
+
 We compute the relative severity (how many out of the total collisions are collisions that result in fatalities) for collisions that occur within and outside of the 5 km radius to nearest hospital we see that collision occurring within the 5 km radius have a fatality rate of 0.59% whilst collisions occurring outside the radius have a fatality rate of 0.65%. If we only consider motorist deaths, the difference becomes even larger. Collisions within the 5 km radius have a motorist fatality rate of 0.20% whilst outside the radius, the fatality rate increase to 0.32%. We can compare to the average fatality rate of 0.60% and the average motorist fatality rate of 0.22%. Overall, we see that collisions occurring more than 5 km away form the nearest hospital have a higher fatality rate, especially when one considers motorist deaths. 
 
 These tendencies can naturally be explained by the speed limit increasing as you go further from the city centre, where most of the hospitals are located. There are also more highways outside of the city centre. Also, these do not necessarily mean that the increased fatality rates are due to long ambulance drives. What it does say is that there are significant number of fatal collisions that are not covered by the 5 km radius of the nearest hospital.
@@ -90,7 +98,7 @@ Notably we see that Queens Hospital centre is the hospital that is closest to mo
 
 ## Optimal locations for New Hospitals
 
-Using Kmeans clustering, we can find optimal placements for future hospitals based solely on collision coverage. We can then compute the mean shortest distance to a hospital given the addition of new hospitals. The incremental impact of additional hospitals shows that after 4 new hospitals, we can decrease the average shortest distance by 0.5 km. This small decrease is likely limited by the spread-out nature of the collisions that are more than 5 km away from the nearest hospital.
+Using Kmeans clustering, we can find optimal placements for future hospitals based solely on collision coverage. We can then compute the mean shortest distance to a hospital given the addition of new hospitals. The incremental impact of additional hospitals shows that after 3 new hospitals, we can decrease the average shortest distance by 0.5 km. This small decrease is likely limited by the spread-out nature of the collisions that are more than 5 km away from the nearest hospital.
 
 <img src="{{site.url}}/imgs/mean.png" style="display: block; margin: auto;" />
 
