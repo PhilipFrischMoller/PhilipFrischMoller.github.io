@@ -1,7 +1,8 @@
 ---
 title: A Deep Dive Into Vehicular Collisions in NYC 
 ---
-.
+
+The below visualistations stem from the linked [iPython notebook](https://github.com/PhilipFrischMoller/PhilipFrischMoller.github.io/blob/main/code/Explainer_v1.ipynb) and is based on the plan detailed in this [video](https://youtu.be/pFTp2CmEs8E).
 
 <img src="{{site.url}}/imgs/meme.gif" style="display: block; margin: auto;" />
 
