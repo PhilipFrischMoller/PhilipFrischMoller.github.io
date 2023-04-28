@@ -27,13 +27,15 @@ This online magazine will dive deeper into traffic accidents that cause death an
 
 We start by looking at vehicular collisions and how they evolve over time to see if there are any tendencies. Evidently, most collisions occur in the weekdays during rush hour both mornings and evenings after work. There has been a significant decrease in collision rates in the last few years, although, there has been no significant change in the mortality rate. Interestingly, it seems that mortalities occur mostly in the weekends, where the collision rate is lowest. 
 
+What is perhaps counter intuitive is that most of the collisions occur during the summertime. One would have otherwise assumed it would have been during the winter as the weather would be statistically worse for driving. 
+
+
 <img src="{{site.url}}/imgs/time series.png" style="display: block; margin: auto;" />
 
 *Plot showing how collision and mortality rates evolve over time*
 
 Taking a look at the contributing factors for the collisions, it is evident that driver distractions cause the highest number of accidents. Unsafe speeds, i.e., speeding, is one of the top contributing factors for death in traffic. There is less traffic during most weekends and as such vehicles drive substantially faster on average. Furthermore, Fridays and weekends tend to also lend themselves more to the consumption of alcohol which is also in the top 10 contributing factors for traffic fatalities. This also neatly explains the peak in fatalities up and around midnight. 
 
-What is perhaps counter intuitive is that most of the collisions occur during the summertime. One would have otherwise assumed it would have been during the winter as the weather would be statistically worse for driving. 
 
 <img src="{{site.url}}/imgs/causes_death.png" style="display: block; margin: auto;" />
 
