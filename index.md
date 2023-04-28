@@ -25,7 +25,7 @@ This online magazine will dive deeper into traffic accidents that cause death an
 
 # A step back: Exploring the Data
 
-We start by looking at vehicular collisions and how they evolve over time to see if there are any tendencies. Evidently, most collisions occur in the weekdays during rush our both mornings and evenings after work. There has been a significant decrease in collision rates in the last few years, although, there has been no significant change in the mortality rate. Interestingly, it seems that mortalities occur mostly in the weekends, where the collision rate is lowest. 
+We start by looking at vehicular collisions and how they evolve over time to see if there are any tendencies. Evidently, most collisions occur in the weekdays during rush hour both mornings and evenings after work. There has been a significant decrease in collision rates in the last few years, although, there has been no significant change in the mortality rate. Interestingly, it seems that mortalities occur mostly in the weekends, where the collision rate is lowest. 
 
 <img src="{{site.url}}/imgs/time series.png" style="display: block; margin: auto;" />
 
