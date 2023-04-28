@@ -15,7 +15,7 @@ In NYC alone, 2,247 people have lost their lives on the streets due to traffic a
 
 <embed type="text/html" src="imgs/injuredpie.html" width="100%" height="600"/>
 
-*Pie charts visualising the representation of different victim types*
+*Pie charts visualising the representation of different victim types in NYC from 2013 to 2022*
 
 This online magazine will dive deeper into traffic accidents that cause death and injury, in NYC from 2013 to 2022. We aim to investigate hospital coverage and figure out whether the distance to the hospitals play a role in the deadliness of the accidents, and model optimal new locations for hospitals in NYC.
 
